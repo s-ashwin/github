@@ -42,7 +42,7 @@ const Signup = ()=>{
             <Container className='text-center bg-dark'>
                 <Row>
                     <Col lg={6} className='offset-lg-3 '>
-                    <DiGithubFull size={100} style={{color:'white'}}></DiGithubFull> 
+                    <DiGithubFull size={150} style={{color:'white'}}></DiGithubFull> 
                         <div className='text-center my-4' style={{color:'white'}}>
                         Get started for free — join the millions of developers already using GitHub to share their code, work together, and build amazing things.
                         </div>

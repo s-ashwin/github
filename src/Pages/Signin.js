@@ -91,7 +91,7 @@ const Signin = ()=>{
                             
                         </Card>
                         <Card className='my-3'>
-                        <CardBody>
+                        <CardBody style={{backgroundColor:'#f6f8fa'}}>
                             <div ><div style={{display:'flex',justifyContent:'center'}}><div className='mr-1'>New user?</div> <a href='/signup' className="text-primary">Create an account.</a></div></div>
                         </CardBody>
                         </Card>
