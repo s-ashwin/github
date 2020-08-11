@@ -12,7 +12,7 @@ const Header = ()=>{
     const toggle = ()=>{setIsOpen(!isOpen)}
 
     return(
-        <Navbar color="dark" light expand="md">
+        <Navbar color="dark" light expand="md" style={{zIndex:'5'}}>
             
             
             <NavbarBrand tag={Link} to="/" className="text-light" ><DiGithubBadge size={45}></DiGithubBadge></NavbarBrand>
@@ -28,13 +28,13 @@ const Header = ()=>{
                         ) : (
                         <>
                         <NavItem>
-                            <NavLink tag={Link} to="/" className="text-light">Home</NavLink>
+                            <NavLink tag={Link} to="/" className="text-light"  onClick={toggle}>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/signup" className="text-light">SignUp</NavLink>
+                            <NavLink tag={Link} to="/signup" className="text-light"  onClick={toggle}>SignUp</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/signin" className="text-light">SignIn</NavLink>
+                            <NavLink tag={Link} to="/signin" className="text-light"  onClick={toggle}>SignIn</NavLink>
                         </NavItem>
                         </>
                         )

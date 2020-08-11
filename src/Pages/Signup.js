@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
-import { Button, Container, Row, Col, Form, FormGroup, Label, Input, Card, CardHeader, CardBody, CardFooter } from 'reactstrap';
+import { Button, Container, Row, Col, Form, FormGroup, Label, Input} from 'reactstrap';
 import firebase from "firebase/app";
 import {Redirect} from "react-router-dom";
 import {toast} from "react-toastify";
 import { Context } from "../Context/Context";
+import { DiGithubFull} from "react-icons/di";
 
 const Signup = ()=>{
 
@@ -37,54 +38,58 @@ const Signup = ()=>{
     }
     else{
         return (
-            <Container className='text-center'>
+            <div className='text-center bg-dark' style={{width:'100%', height:'100%'}}>
+            <Container className='text-center bg-dark'>
                 <Row>
-                    <Col lg={6} className='offset-lg-3 mt-5'>
-                        <Card>
+                    <Col lg={6} className='offset-lg-3 '>
+                    <DiGithubFull size={100} style={{color:'white'}}></DiGithubFull> 
+                        <div className='text-center my-4' style={{color:'white'}}>
+                        Get started for free — join the millions of developers already using GitHub to share their code, work together, and build amazing things.
+                        </div>
                             <Form onSubmit={handleSubmit}>
-                                <CardHeader className=''>Create a New Account</CardHeader>
-                                <CardBody>
-                                    <FormGroup row>
-                                        <Label for='email' sm={3}>
+                               
+                                    <FormGroup >
+                                        <Label for='email' style={{float:'left', fontWeight:'bold', color:'white'}}>
                                             Email
                                         </Label>
-                                        <Col sm={9}>
+                                       
                                             <Input
                                                 type='email'
                                                 name='email'
                                                 id='email'
-                                                placeholder='Enter your email'
+                                                placeholder='Your email address'
                                                 value={email}
                                                 onChange={e => setEmail(e.target.value)}
                                             />
-                                        </Col>
+                                        
                                     </FormGroup>
-                                    <FormGroup row>
-                                        <Label for='password' sm={3}>
+                                    <FormGroup >
+                                        <Label for='password' style={{float:'left', fontWeight:'bold', color:'white'}}>
                                             Password
                                         </Label>
-                                        <Col sm={9}>
+                                        
                                             <Input
                                                 type='password'
                                                 name='password'
                                                 id='password'
-                                                placeholder='Enter your password '
+                                                placeholder='Create a password '
                                                 value={password}
                                                 onChange={e => setPassword(e.target.value)}
                                             />
-                                        </Col>
+                                       
                                     </FormGroup>
-                                </CardBody>
-                                <CardFooter>
-                                    <Button type='submit' block color='primary'>
+                                
+                                
+                                    <Button className='mt-4' type='submit' block color='success'>
                                         Sign Up
                                     </Button>
-                                </CardFooter>
+                               
                             </Form>
-                        </Card>
+                       
                     </Col>
                 </Row>
             </Container>
+            </div>
         );
     }
 }
