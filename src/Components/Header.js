@@ -13,9 +13,11 @@ const Header = ()=>{
 
     return(
         <Navbar color="dark" light expand="md">
-            <NavbarBrand tag={Link} to="/" className="text-light" style={{marginRight:'16%'}}><DiGithubBadge size={45}></DiGithubBadge></NavbarBrand>
+            
+            
+            <NavbarBrand tag={Link} to="/" className="text-light" ><DiGithubBadge size={45}></DiGithubBadge></NavbarBrand>
             <NavbarText className="text-light">{ context.user?.email ? context.user.email : ""}</NavbarText>
-            <NavbarToggler className="navbar-dark order-first" onClick={toggle} style={{border:'none'}}></NavbarToggler>
+            <NavbarToggler className="navbar-dark " onClick={toggle} style={{border:'none'}}></NavbarToggler>
             <Collapse navbar isOpen={isOpen}>
                 <Nav className="ml-auto" navbar>
                     {

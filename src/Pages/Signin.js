@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Button, Container, Row, Col, Form, FormGroup, Label, Input, Card, CardBody, CardFooter } from 'reactstrap';
+import { Button, Container, Row, Col, Form, FormGroup, Label, Input, Card, CardBody } from 'reactstrap';
 import firebase from "firebase/app";
 import {Redirect} from "react-router-dom";
 import {toast} from "react-toastify";
@@ -80,12 +80,13 @@ const Signin = ()=>{
                                             />
                                        
                                     </FormGroup>
-                                </CardBody>
-                                <CardFooter>
-                                    <Button type='submit' block color='success'>
+                                    <Button className='mt-4' type='submit' block color='success'>
                                         Sign In
                                     </Button>
-                                </CardFooter>
+                                </CardBody>
+                                
+                                    
+                                
                             </Form>
                         </Card>
                     </Col>
