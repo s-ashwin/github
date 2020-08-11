@@ -42,7 +42,7 @@ const Signin = ()=>{
                 <Row>
                     <Col lg={6} className='offset-lg-3 ' >
                     <div className='my-4 '>
-                                <DiGithubBadge size={75}></DiGithubBadge>
+                                <DiGithubBadge size={75} className='text-dark'></DiGithubBadge>
                                 <h3 className='my-2 '> Sign In</h3>
                                 </div>
                         <Card>
