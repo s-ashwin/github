@@ -84,10 +84,16 @@ const Signin = ()=>{
                                         Sign In
                                     </Button>
                                 </CardBody>
-                                
+                               
                                     
                                 
                             </Form>
+                            
+                        </Card>
+                        <Card className='my-3'>
+                        <CardBody>
+                            <div ><div style={{display:'flex',justifyContent:'center'}}><div className='mr-1'>New user?</div> <a href='/signup' className="text-primary">Create an account.</a></div></div>
+                        </CardBody>
                         </Card>
                     </Col>
                 </Row>
