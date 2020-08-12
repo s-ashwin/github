@@ -1,9 +1,55 @@
-html,body{
-    height: 100vh;
-    width: 100%;
+html,body,#root {
+	width: 100%;
+	height: 100vh;
     background-color:#f6f8fa ;
 }
-#root{
-    height: 100%;
+.sign{
     width: 100%;
+    height: calc(100vh - 71px)!important;
+    background-color: var(--dark) ;
 }
+.home{
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 71px)!important;
+    background-color: white;
+}
+.repo-item{
+    min-width: 47%;
+    max-width: 47%;
+    cursor: pointer;
+}
+.repo-item h6{
+    font-size: 15px;
+    margin: 0;
+}
+.repo-item h5{
+    font-size: 15px;
+}
+.repo-item div{
+    margin-bottom: 8px;
+}
+.repo-item .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.repos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-md-8 p{
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+ @media (max-width:  768px) { 
+    .repo-item{
+        min-width: 96%;
+        max-width: 96%;
+    }
+    .col-md-8{
+        margin-top: 10px;
+    }
+ }

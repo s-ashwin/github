@@ -5,7 +5,7 @@ import {Redirect} from "react-router-dom";
 import {toast} from "react-toastify";
 import { Context } from "../Context/Context";
 import { DiGithubFull} from "react-icons/di";
-import '../signup.css';
+
 
 const Signup = ()=>{
 
