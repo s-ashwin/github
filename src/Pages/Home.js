@@ -34,7 +34,7 @@ const Home = ()=>{
         <div className="home">
         <Container >
             <Row className="my-3">
-                <Col md="4">
+                <Col md="3">
                     <InputGroup>
                         <Input type="text" value={query} onChange={e=> setQuery(e.target.value)} placeholder="Search for user"></Input>
                         <InputGroupAddon addonType="append">
@@ -43,7 +43,7 @@ const Home = ()=>{
                     </InputGroup>
                     { user ? <Usercard user={user}></Usercard> : null }
                 </Col>
-                <Col md="8" >
+                <Col md="9" >
                 <p className="text-secondary"><GoRepo className="text-secondary mr-1"></GoRepo>Repositories</p>
                 { user ? <Repo url={user.repos_url}></Repo> : null }
                 </Col>

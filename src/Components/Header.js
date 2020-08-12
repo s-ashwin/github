@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink, NavbarText } from "reactstrap";
+import { Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem, NavLink } from "reactstrap";
 import { Link } from "react-router-dom";
 import { Context } from "../Context/Context";
 import { DiGithubBadge} from "react-icons/di";
@@ -16,7 +16,7 @@ const Header = ()=>{
             
             
             <NavbarBrand tag={Link} to="/" className="text-light" ><DiGithubBadge size={45}></DiGithubBadge></NavbarBrand>
-            <NavbarText className="text-light">{ context.user?.email ? context.user.email : ""}</NavbarText>
+           
             <NavbarToggler className="navbar-dark " onClick={toggle} style={{border:'none'}}></NavbarToggler>
             <Collapse navbar isOpen={isOpen}>
                 <Nav className="ml-auto" navbar>
