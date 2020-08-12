@@ -36,7 +36,7 @@ const Home = ()=>{
             <Row className="my-3">
                 <Col md="4">
                     <InputGroup>
-                        <Input type="text" value={query} onChange={e=> setQuery(e.target.value)} placeholder="Search for username"></Input>
+                        <Input type="text" value={query} onChange={e=> setQuery(e.target.value)} placeholder="Search for user"></Input>
                         <InputGroupAddon addonType="append">
                             <Button onClick={fetchdetail}><FaSistrix></FaSistrix></Button>
                         </InputGroupAddon>

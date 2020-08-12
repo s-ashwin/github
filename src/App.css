@@ -1,6 +1,6 @@
 html,body,#root {
 	width: 100%;
-	height: 100vh;
+    height: 100%!important;
     background-color:#f6f8fa ;
 }
 .sign{
@@ -11,7 +11,7 @@ html,body,#root {
 .home{
     position: absolute;
     width: 100%;
-    height: calc(100% - 71px)!important;
+    min-height: calc(100% - 71px)!important;
     background-color: white;
 }
 .repo-item{
@@ -22,6 +22,8 @@ html,body,#root {
 .repo-item h6{
     font-size: 15px;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 .repo-item h5{
     font-size: 15px;
@@ -42,6 +44,30 @@ html,body,#root {
     margin: 10px;
     font-weight: bold;
 }
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.profile img{
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.info{
+    width: 90%;
+}
+.info .name{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.abt .bio{
+    color: black!important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
 
 
  @media (max-width:  768px) { 
@@ -51,5 +77,29 @@ html,body,#root {
     }
     .col-md-8{
         margin-top: 10px;
+    }
+    .profile{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+    .profile .info{
+        margin: auto 0 ;
+        width: 65%;
+    }
+    
+    .profile img{
+        margin-right: 15px;
+        width:100%;
+    }
+    .profile img{
+        
+        width:100px;
+    }
+    .abt .bio{
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
  }
