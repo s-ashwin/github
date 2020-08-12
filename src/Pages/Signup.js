@@ -5,6 +5,7 @@ import {Redirect} from "react-router-dom";
 import {toast} from "react-toastify";
 import { Context } from "../Context/Context";
 import { DiGithubFull} from "react-icons/di";
+import '../signup.css';
 
 const Signup = ()=>{
 
@@ -38,8 +39,8 @@ const Signup = ()=>{
     }
     else{
         return (
-            <div className='text-center bg-dark' style={{width:'100%', height:'100%'}}>
-            <Container className='text-center bg-dark'>
+            <div className='text-center sign'>
+            <Container className='text-center '>
                 <Row>
                     <Col lg={6} className='offset-lg-3 '>
                     <DiGithubFull size={150} style={{color:'white'}}></DiGithubFull> 
