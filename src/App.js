@@ -29,8 +29,8 @@ function App() {
         <Header></Header>
           <Switch>
             <Route exact path="/github/" component={Home}></Route>
-            <Route exact path="/signin" component={Signin}></Route>
-            <Route exact path="/signup" component={Signup}></Route>
+            <Route exact path="/github/signin" component={Signin}></Route>
+            <Route exact path="/github/signup" component={Signup}></Route>
             <Route exact path="*" component={Notfound}></Route>
           </Switch>
         </Context.Provider>

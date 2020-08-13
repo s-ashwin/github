@@ -31,10 +31,10 @@ const Header = ()=>{
                             <NavLink tag={Link} to="/github" className="text-light"  onClick={toggle}>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/signup" className="text-light"  onClick={toggle}>SignUp</NavLink>
+                            <NavLink tag={Link} to="/github/signup" className="text-light"  onClick={toggle}>SignUp</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/signin" className="text-light"  onClick={toggle}>SignIn</NavLink>
+                            <NavLink tag={Link} to="/github/signin" className="text-light"  onClick={toggle}>SignIn</NavLink>
                         </NavItem>
                         </>
                         )
