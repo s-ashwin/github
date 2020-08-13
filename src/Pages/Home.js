@@ -36,7 +36,7 @@ const Home = ()=>{
                             </Col>
                             <Col md='6' className="auth">
                                 <GoLogoGithub size={100}></GoLogoGithub>
-                            <div className=""> <p>If you are an existing user</p> <Button onClick={event =>  window.location.href='/signin'} className="my-2 btn-success">Sign In</Button> <p>Or, Create a New Account</p> <Button onClick={event =>  window.location.href='/signup'} className="my-2 btn-success"> Sign Up</Button>  </div>
+                            <div className=""> <p>If you are an existing user</p> <Button onClick={event =>  window.location.href='/github/signin'} className="my-2 btn-success">Sign In</Button> <p>Or, Create a New Account</p> <Button onClick={event =>  window.location.href='/github/signup'} className="my-2 btn-success"> Sign Up</Button>  </div>
                             </Col>
                         </Row>
                     </Container>
