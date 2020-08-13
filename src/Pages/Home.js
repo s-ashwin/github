@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import { useHistory } from 'react-router-dom';
 import Axios from "axios";
 import { Container, Row, InputGroup, InputGroupAddon, Col, Input, Button } from "reactstrap";
 import { FaSistrix } from "react-icons/fa";
@@ -24,6 +25,9 @@ const Home = ()=>{
             toast("No user found", {type:"error"})
         }
     }
+
+    const history = useHistory();
+
     if(!context.user?.uid){
         return(
             <div className="defaulthome">
@@ -36,7 +40,7 @@ const Home = ()=>{
                             </Col>
                             <Col md='6' className="auth">
                                 <GoLogoGithub size={100}></GoLogoGithub>
-                            <div className=""> <p>If you are an existing user</p> <Button onClick={event =>  window.location.href='/github/signin'} className="my-2 btn-success">Sign In</Button> <p>Or, Create a New Account</p> <Button onClick={event =>  window.location.href='/github/signup'} className="my-2 btn-success"> Sign Up</Button>  </div>
+                            <div className=""> <p>If you are an existing user</p> <Button onClick={() => history.push('/github/signin')} className="my-2 btn-success">Sign In</Button> <p>Or, Create a New Account</p> <Button onClick={() => history.push('/github/signup')} className="my-2 btn-success"> Sign Up</Button>  </div>
                             </Col>
                         </Row>
                     </Container>
