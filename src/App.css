@@ -26,6 +26,7 @@ html,body,#root {
 }
 .link{
     cursor: pointer;
+    margin: 0;
 }
 .intro{
     display: flex;
@@ -125,7 +126,6 @@ html,body,#root {
     color: black!important;
     margin-top: 15px;
     margin-bottom: 15px;
-    font-weight: lighter;
 }
 .dev{
     height: fit-content;
