@@ -35,7 +35,7 @@ const Signup = ()=>{
     }
 
     if(context.user?.email){
-        return <Redirect to="/"></Redirect>
+        return <Redirect to="/github"></Redirect>
     }
     else{
         return (
