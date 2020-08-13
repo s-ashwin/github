@@ -24,6 +24,9 @@ html,body,#root {
     font-size: large;
    
 }
+.link{
+    cursor: pointer;
+}
 .intro{
     display: flex;
     flex-direction: column;
