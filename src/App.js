@@ -28,7 +28,7 @@ function App() {
         <Context.Provider value={{user, setUser}}>
         <Header></Header>
           <Switch>
-            <Route exact path="/" component={Home}></Route>
+            <Route exact path="/github" component={Home}></Route>
             <Route exact path="/signin" component={Signin}></Route>
             <Route exact path="/signup" component={Signup}></Route>
             <Route exact path="*" component={Notfound}></Route>
