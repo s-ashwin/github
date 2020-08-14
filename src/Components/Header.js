@@ -23,7 +23,7 @@ const Header = ()=>{
                     {
                         context.user ? (
                         <NavItem>
-                            <NavLink onClick={()=>context.setUser(null)} className="text-light">LogOut</NavLink>
+                            <NavLink onClick={()=>context.setUser(null)} className="text-light">Log Out</NavLink>
                         </NavItem>
                         ) : (
                         <>
@@ -31,10 +31,10 @@ const Header = ()=>{
                             <NavLink tag={Link} to="/github" className="text-light"  onClick={toggle}>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/github/signup" className="text-light"  onClick={toggle}>SignUp</NavLink>
+                            <NavLink tag={Link} to="/github/signup" className="text-light"  onClick={toggle}>Sign Up</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/github/signin" className="text-light"  onClick={toggle}>SignIn</NavLink>
+                            <NavLink tag={Link} to="/github/signin" className="text-light"  onClick={toggle}>Sign In</NavLink>
                         </NavItem>
                         </>
                         )
