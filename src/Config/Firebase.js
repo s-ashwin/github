@@ -1,5 +1,5 @@
 export default {
-    apiKey: "AIzaSyC0_oIAV5iDLrR5Gv8AZaqK-LftGhCz6SU",
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: "github-app-66d9b.firebaseapp.com",
     databaseURL: "https://github-app-66d9b.firebaseio.com",
     projectId: "github-app-66d9b",
