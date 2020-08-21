@@ -15,7 +15,7 @@ const Header = ()=>{
         <Navbar color="dark" light expand="md" style={{zIndex:'5'}}>
             
             
-            <NavbarBrand tag={Link} to="/github" className="text-light" ><DiGithubBadge size={45}></DiGithubBadge></NavbarBrand>
+            <NavbarBrand tag={Link} to="/" className="text-light" ><DiGithubBadge size={45}></DiGithubBadge></NavbarBrand>
            
             <NavbarToggler className="navbar-dark " onClick={toggle} style={{border:'none'}}></NavbarToggler>
             <Collapse navbar isOpen={isOpen}>
