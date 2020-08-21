@@ -28,13 +28,13 @@ const Header = ()=>{
                         ) : (
                         <>
                         <NavItem>
-                            <NavLink tag={Link} to="/github" className="text-light"  onClick={toggle}>Home</NavLink>
+                            <NavLink tag={Link} to="/" className="text-light"  onClick={toggle}>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/github/signup" className="text-light"  onClick={toggle}>Sign Up</NavLink>
+                            <NavLink tag={Link} to="/signup" className="text-light"  onClick={toggle}>Sign Up</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink tag={Link} to="/github/signin" className="text-light"  onClick={toggle}>Sign In</NavLink>
+                            <NavLink tag={Link} to="/signin" className="text-light"  onClick={toggle}>Sign In</NavLink>
                         </NavItem>
                         </>
                         )
