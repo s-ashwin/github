@@ -36,7 +36,7 @@ const Signin = ()=>{
     const history = useHistory();
 
     if(context.user?.email){
-        return <Redirect to="/github"></Redirect>
+        return <Redirect to="/"></Redirect>
     }
     else{
         return (
@@ -94,7 +94,7 @@ const Signin = ()=>{
                         </Card>
                         <Card className='my-3'>
                         <CardBody style={{backgroundColor:'#f6f8fa'}}>
-                            <div ><div style={{display:'flex',justifyContent:'center'}}><div className='mr-1'>New user?</div> <p onClick={() => history.push('/github/signup')} className="text-primary link">Create an account.</p></div></div>
+                            <div ><div style={{display:'flex',justifyContent:'center'}}><div className='mr-1'>New user?</div> <p onClick={() => history.push('/signup')} className="text-primary link">Create an account.</p></div></div>
                         </CardBody>
                         </Card>
                     </Col>
